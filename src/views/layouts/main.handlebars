@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>ELECTROGIRAU-{{seccion}}</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+
+</head>
+
+<body>
+    <header>
+        <div class="imgPortadaCaja">
+            <img class="imgPortada" src="/img/ELECTROGIRAU.jpg" alt="logo electrogirau">
+        </div>
+        <nav>
+            <div class="menu">
+                <ul class="menuLink">
+                    <li><a href="/">HOME</a></li>
+                    {{!-- <li><a href="/realTimeProducts">REALTIME</a></li> --}}
+                    {{!-- <li><a href="/chat">CHAT</a></li> --}}
+                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="/products">PRODUCTOS</a></li>
+                    {{!-- <li><a href="/carts">CARTS</a></li> --}}
+                </ul>
+            </div>
+        </nav>
+    </header>
+    {{{body}}}
+</body>
+<footer>
+    <img class="imgFooter" src="/img/ELECTROGIRAU.jpg" alt="logo electrogirau">
+    <img class="imgFooter" src="/img/redesSinFondo.png" alt="redes">
+    <div>
+        <p class="suscribite">Si queres recibir nuestras novedades suscríbete aquí:</p>
+        <form action="">
+            <label>Email:</label><input type="email" id= name="email" placeholder="Email" />
+        </form>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,27 @@
+<div class="usuario">
+    <h2>BIENVENIDO: {{email}}</h2>
+    {{#if isAdmin}}
+    <h3>(admin)</h3>
+    {{/if}}
+    {{#if role}}
+    <h3>(user)</h3>
+    {{/if}}
+    <button onclick="location.href='/profile'">Perfil</button>
+</div>
+
+<div class="card-big">
+    <h1>{{title}}</h1>
+    <img src={{thumbnail}} class="card-img" alt="...">
+    <h2>{{description}}</h2>
+    <h3>${{price}}</h3>
+    <h4>Stock: {{stock}}</h4>
+    <div>
+        <button>
+            <a href="/products">Volver</a>
+        </button>
+
+        <button>
+            <a href="/products/add/{{_id}}">Agregar al carrito</a>
+        </button>
+    </div>
+</div>

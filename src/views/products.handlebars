@@ -1,0 +1,50 @@
+<div class="usuario">
+  <h2>BIENVENIDO: {{email}}</h2>
+  {{#if isAdmin}}
+  <h3>(admin)</h3>
+  {{/if}}
+  {{#if role}}
+  <h3>(user)</h3>
+  {{/if}}
+  <button onclick="location.href='/perfil'">Perfil</button>
+</div>
+
+<div>
+  <div>
+    <h1 class="text-center">Estos son nuestros productos</h1>
+  </div>
+</div>
+
+{{#each products.docs}}
+<div class="container-fluid">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="card" style="width: 20rem;">
+      <img src={{thumbnail}} class="card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{title}}</h5>
+        <p class="card-text">{{price}}</p>
+        <button><a href="/products/{{_id}}">Ver producto</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  {{/each}}
+
+    {{#if products.hasPrevPage}}
+    <button>
+      <a href="/products/page/{{products.prevPage}}">Anterior</a>
+    </button>
+    {{/if}}
+
+    {{#if products.hasNextPage}}
+    <button>
+      <a href="/products/page/{{products.nextPage}}">Siguiente</a>
+    </button>
+    {{/if}}
+
+    </div>
+  </div>
+</section>
+
+

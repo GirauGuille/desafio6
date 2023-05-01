@@ -1,0 +1,17 @@
+<div class="userCard">
+  <h2>Hola: {{email}}</h2>
+  {{#if isAdmin}}
+  <h1>(admin)</h1>
+  {{/if}}
+
+  {{#if role}}
+  <h1>(user)</h1>
+  {{/if}}
+
+  <p>Primer nombre: {{first_name}}  </p>
+  <p>Segundo nombre: {{last_name}}</p>
+  <p>Edad: {{age}}</p>
+  <button onclick="location.href='/products'">Ir a la tienda</button>
+
+  <button onclick="location.href='/api/users/logout'">Logout</button>
+</div>

@@ -1,0 +1,28 @@
+<h1>
+  Inicia seción
+</h1>
+
+<div class="login">
+  <div class="logForm">
+    <img src="/img/persona.jpg" alt="persona loging">
+    <form action="/api/users/login" method="POST">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="@mail.com" />
+      <br>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="más de 4 digitos" />
+      <br>
+      <button type="submit">INICIAR SESIÓN</button>
+    </form>
+  </div>
+  <div>
+    <h2>Login with Github</h2>
+    <button type="button" onclick="location.href='/api/users/github/callback'">Github</button>
+  </div>
+
+  <div class="registro">
+    <p>Si no te registraste aun, hacelo con el siguiente enlace: </p>
+    <button type="button" onclick="location.href='/register'">Registrate</button>
+  </div>
+</div>
+
