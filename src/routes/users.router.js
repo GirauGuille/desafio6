@@ -5,6 +5,20 @@ import passport from 'passport';
 const router = Router();
 const usersManager = new UsersManager();
 
+// router.post('/register', async (req, res) => {
+//     try {
+//         const user = req.body;
+//         const newUser = await usersManager.createUser(user);
+//         if (newUser) {
+//             res.redirect('/login');
+//         } else {
+//             res.redirect('/errorRegister');
+//         }
+//     } catch (error) {
+//         res.status(400).json({ error: error.message });
+//     }
+// });
+
 // register with passport
 router.post('/register', passport.authenticate('Register', {
     successRedirect: '/login',

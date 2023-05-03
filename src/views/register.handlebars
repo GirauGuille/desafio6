@@ -1,22 +1,31 @@
-<di class="registro">
+<div class="registro">
   <h1>
   Registrate
   </h1>
   <p>Llena los casilleros para registrarte.</p>
 
-  <form action="/api/users/register" method="POST">
-    <input type="text" name="first_name" id="first_name" placeholder="First Name"/>
-    <input type="text" name="last_name" id="last_name" placeholder="Last Name" />
-    <input type="email" name="email" id="email" placeholder="Email" />
-    <input type="number" name="age" id="age" placeholder="Age" />
-    <input type="password" name="password" id="password" placeholder="Password" />
-    <input type="submit" value="Register" />
-  </form>
+  <div class="login">
+    <form action="/api/users/register" method="POST">
+      <input type="text" name="first_name" id="first_name" placeholder="First Name"/>
+      <input type="text" name="last_name" id="last_name" placeholder="Last Name" />
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input type="number" name="age" id="age" placeholder="Age" />
+      <input type="password" name="password" id="password" placeholder="Password" />
+      <input type="submit" value="Register" />
+    </form>
+  </div>
 
-  
-<h2>Register with Github</h2>
-<button type="button" onclick="location.href='/api/users/github'">Github</button>
+  <p>----------------o----------------</p>
 
+  <div class="auth">
+    <h2>Registrate con:</h2>
+    <div>
+      <button class="bottonAuth" type="button" onclick="location.href='/api/users/github'"><img class="imgAuth" src="/img/github-logo.png" alt=""> Github</button>
+    </div>
+    <div>
+      <button class="bottonAuth" type="button" onclick="location.href='/api/users/google'"><img class="imgAuth" src="/img/google-logo.png" alt=""> Google</button>
+    </div>
+  </div>
 
   <div class="vuelveLogin">
     <p>Si ya estás registrado ve a iniciar sesión</p>

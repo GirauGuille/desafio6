@@ -87,6 +87,29 @@ img {
     flex-direction: column;
 }
 
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: solid;
+}
+
+.bottonAuth{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.imgAuth{
+    width: 20%;
+    height: auto;
+}
+
 /* REGISTRO */
 .vuelveLogin{
     margin-top: 15px;
